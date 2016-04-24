@@ -40,7 +40,7 @@ export default function refresh() {
 			console.log('comes here')
 			dispatch(refreshSuccess())
 		}).catch(function(error){
-			console.log(error)
+			console.log(error.toString())
 			dispatch(refershFailure())
 
 		})
