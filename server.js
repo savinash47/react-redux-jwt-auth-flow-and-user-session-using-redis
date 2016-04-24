@@ -46,7 +46,6 @@ app.get('*', function(req, res, next){
 })
 
 app.post('/login',function(req,res){
-  console.log(req.body)
   var useremail = req.body.email;
   var password = req.body.password;
   if(useremail === 'email@email.com' && password === 'password1@'){
@@ -57,7 +56,6 @@ app.post('/login',function(req,res){
       }
       if(reply){
         //expire token in 5 minutes here but for standard use You should use 7 days
-       
         client.expireat(useremail,expireIn)
         res.json({token:token})
       }
@@ -78,7 +76,6 @@ app.post('/logout', function(req,res){
 
 app.post('/refresh', function(req,res){
     var token = req.get('Auth')
-    console.log(token)
     if(token !== null){
       var userEmail = verifyToken(token)
       client.get(userEmail, function(err,reply){
