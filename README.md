@@ -15,10 +15,15 @@ In this app for demonstration purposes I have used the lifetime of token as 5 mi
 
 This project doesn't use any other database to store user data. You can use a database of your choice and just add code to signup and login
 
+##Important places to look for
+
+# /server.js
+# /utils/
+
 ##Try it
 
-npm install
+git clone
 
-Go to the browser and browse to: 
+npm install
 
 http://localhost:8888
