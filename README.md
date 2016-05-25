@@ -1,4 +1,4 @@
-# React-redux-jwt-auth-flow-and-user-session-using-redis
+# react-redux-jwt-auth-flow-and-user-session-using-redis
 Sample project for auth flow using React, React Router, Redux, jwt and redis
 
 ##Description
@@ -17,8 +17,8 @@ This project doesn't use any other database to store user data. You can use a da
 
 ##Important places to look for
 
-# /server.js
-# /utils/
+ /server.js
+ /utils/
 
 ##Try it
 
